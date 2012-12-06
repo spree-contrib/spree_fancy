@@ -1,0 +1,8 @@
+<!-- replace 'h6' -->
+<% unless current_page?(checkout_registration_path) %>
+  <% content_for :subheader do %>
+    <h1><%= t(:login_as_existing) %></h1>
+  <% end %>
+<% else %>
+  <h3><%= t(:login_as_existing) %></h3>
+<% end %>

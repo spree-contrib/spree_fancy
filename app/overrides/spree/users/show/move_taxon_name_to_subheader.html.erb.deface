@@ -1,0 +1,4 @@
+<!-- replace 'h1' -->
+<% content_for :subheader do %>
+  <h1 class="page-title"><%= accurate_title %></h1>
+<% end %>

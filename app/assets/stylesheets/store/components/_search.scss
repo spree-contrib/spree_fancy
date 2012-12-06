@@ -1,0 +1,23 @@
+#search-bar {
+  display: inline-block;
+  
+  a {
+    position: relative;
+    z-index: 1;
+  }
+
+  form {
+    display: none;
+    position: absolute;
+    right: 40px;
+    margin-top: -30px;
+    background-color: white;
+    z-index: 0;
+
+    #keywords {
+      width: 100%;
+      padding-right: 30px;
+      margin-left: -15px;
+    }
+  }
+}

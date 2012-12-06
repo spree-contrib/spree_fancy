@@ -1,0 +1,10 @@
+<!-- insert_before '#wrapper' -->
+<!-- sequence :after => 'unwrap_header_from_container_class' -->
+
+  <div id="subheader">
+    <div class="container">
+      <div class="subheader-wrapper">
+        <%= yield :subheader %>
+      </div>
+    </div>
+  </div>

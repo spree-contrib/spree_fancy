@@ -1,0 +1,4 @@
+<!-- insert_top '#wrapper' -->
+<% if current_page?(root_path) %>
+  <div class="slider-pager"></div>
+<% end %>

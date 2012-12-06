@@ -1,0 +1,82 @@
+input[type="button"], input[type="submit"],
+button, .button, a.button, input[type="number"],
+input[type="text"], input[type="email"],
+input[type="password"], input[type="tel"],
+input[type="search"], 
+textarea {
+  @include border-radius(20px);
+  @include box-shadow(none);
+  @include transition-duration(0.3s);
+  border-width: 3px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+
+
+  &:hover {
+    background-color: $c_green;
+    color: white;
+    border-color: lighten($c_green, 30);  
+  }
+}
+
+select {
+  font-size: 16px;
+}
+
+#billing, #shipping {
+  select {
+    width: 93%;
+  }  
+}
+
+input[type="number"],
+input[type="text"], input[type="email"],
+input[type="password"], input[type="tel"],
+input[type="search"], textarea {
+  @include border-radius(8px);
+  text-transform: none;
+  color: $body_text_color;
+
+  &:hover {
+    background-color: white;  
+    color: $body_text_color;
+  }
+}
+
+fieldset {
+  font-size: 14px !important;  
+}
+
+form {
+  p, .field {
+    padding: 0;  
+  }   
+}
+
+label.ui-button {
+  @include border-radius(15px);
+  @include transition-duration(0.3s);
+  border-width: 2px;
+  margin-right: 10px !important;
+  margin-bottom: 10px;
+  font-size: 12px;
+  background-image: none;    
+  color: $c_blue;
+
+  &:hover {
+    background-color: $c_blue;
+    color: white;
+  }
+
+  &.ui-state-active {
+    color: white;
+    background-color: $c_green;
+    border-color: darken($c_green, 5);
+  }
+
+  &:hover, &.ui-state-active {
+    .price.diff {
+      color: lighten($c_blue, 30);  
+    }  
+  }
+}

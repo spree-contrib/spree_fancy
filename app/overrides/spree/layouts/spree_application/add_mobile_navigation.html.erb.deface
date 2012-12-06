@@ -1,0 +1,4 @@
+<!-- insert_top '[data-hook="body"]' -->
+<div id="mobile-navigation">
+  <%= render 'spree/shared/main_nav_bar'%>
+</div>

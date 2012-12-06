@@ -1,0 +1,5 @@
+<!-- surround_contents '#content' -->
+<!-- sequence :after => 'unwrap_header_from_container_class' -->
+<div class="container">
+  <%= render_original %>
+</div>

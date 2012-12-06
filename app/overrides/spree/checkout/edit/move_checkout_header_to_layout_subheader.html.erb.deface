@@ -1,0 +1,4 @@
+<!-- surround_contents '[data-hook="checkout_header"]' -->
+<% content_for :subheader do %>
+  <%= render_original %>
+<% end %>

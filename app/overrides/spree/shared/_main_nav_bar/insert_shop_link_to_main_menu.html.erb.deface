@@ -1,0 +1,8 @@
+<!-- insert_after '#home-link' -->
+<li id="shop-link"><%= link_to t(:shop), spree.products_path %>
+  <% if @taxonomies %>
+    <ul class="hidden sub-menu">
+      <%= render 'spree/shared/taxonomies' %>
+    </ul>
+  <% end %>
+</li>

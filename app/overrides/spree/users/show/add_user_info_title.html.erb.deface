@@ -1,0 +1,2 @@
+<!-- insert_top '[data-hook="account_summary"]' -->
+<h3><%= t(:user_info) %></h3>

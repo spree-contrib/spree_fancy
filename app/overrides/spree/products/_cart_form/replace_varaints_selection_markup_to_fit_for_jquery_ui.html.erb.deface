@@ -1,0 +1,20 @@
+<!-- replace '#product-variants ul' -->
+<div class="variants-buttons">
+  <% has_checked = false
+  @product.variants.active(current_currency).each_with_index do |v,index|
+    next if v.option_values.empty? || (!v.in_stock && !Spree::Config[:show_zero_stock_products])
+    checked = !has_checked && (v.in_stock || Spree::Config[:allow_backorders])
+    has_checked = true if checked %>
+    
+      <%= radio_button_tag "products[#{@product.id}]", v.id, checked, :disabled => !v.in_stock && !Spree::Config[:allow_backorders], 'data-price' => v.price_in(current_currency).display_price %>
+      <label for="<%= ['products', @product.id, v.id].join('_') %>">
+        <span class="variant-description">
+          <%= variant_options v %>
+        </span>
+        <% if variant_price v %>
+          <span class="price diff"><%= variant_price v %></span>
+        <% end %>
+      </label>
+    
+  <% end%>
+</ul>

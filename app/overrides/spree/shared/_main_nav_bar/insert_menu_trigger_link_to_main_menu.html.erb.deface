@@ -1,0 +1,7 @@
+<!-- insert_before '#main-nav-bar' -->
+<a href="#mobile-navigation" class="open-menu">
+  ☰
+</a>
+<a href="#" class="close-menu">
+  ☰
+</a>

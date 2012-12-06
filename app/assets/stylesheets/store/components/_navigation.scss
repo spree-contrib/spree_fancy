@@ -1,0 +1,172 @@
+.open-menu, .close-menu {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  font-size: 30px;
+}
+
+.open-menu {
+  display: block;  
+}
+
+.close-menu, .open-menu {
+  display: none;  
+}
+
+// Sudebar mobile navigation
+#mobile-navigation {
+  background-color: $c_blue;
+  position: fixed;
+  top: 0;
+  width: 0;
+  height: 100%;
+  overflow: auto;
+  @include transition-duration(0.2s);
+
+  .open-menu, .close-menu {
+    display: none;
+  }
+
+  #main-nav-bar {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    li {
+      width: 100%;
+
+      a {
+        color: white;
+        display: block;
+        padding: 10px 0 10px 24px !important;
+        background-color: lighten($c_blue, 10);
+        border-bottom: 1px solid $c_blue;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        &:hover {
+          background-color: $c_green;
+          color: white !important;
+        }
+      }
+    }
+
+    .sub-menu {
+      display: block;
+
+      .taxonomy-root {
+        color: white;
+        border: none;
+        padding: 10px 0 10px 24px !important;
+        font-size: 14px;
+        background-color: lighten($c_blue, 15);
+        border-bottom: 1px solid lighten($c_blue, 5);
+        margin: 0;
+      }
+
+      .taxons-list {
+        margin: 0;
+
+        li {
+          width: 100%;
+
+          a {
+            background-color: lighten($c_blue, 20);
+            border-bottom: 1px solid lighten($c_blue, 10);
+            font-size: 12px;
+            padding: 5px 0 5px 34px !important;
+            text-transform: none;
+
+            &:hover {
+              background-color: $c_green;
+              color: white !important;
+            }
+          }
+        }  
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 34px;
+    background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+  }
+
+  &:target {
+    width: 50%;
+    @include transition-duration(0.2s);
+  }
+
+  &:target + .page-wrapper {
+    width: 50% !important;
+    overflow: hidden;
+    
+    .open-menu {
+       display: none; 
+    }
+    
+    .close-menu {
+       display: block;
+    }
+  }
+
+  * {
+    text-align: left !important;  
+  }
+}
+
+nav#top-nav-bar {
+  float: right;
+
+  ul li a {
+    font-size: 16px;  
+  }
+}
+nav #main-nav-bar, nav#top-nav-bar {
+  margin-top: 40px;
+  text-align: right;
+
+  li {
+    a {
+      font-weight: 600 !important;
+
+      &:hover, &.active {
+        color: $c_green !important;
+      }   
+    }
+
+    &.current {
+      a {
+        color: $c_green;
+
+        &:hover {
+          color: darken($c_green, 5);
+        }
+      }
+    }
+  }
+}
+nav #main-nav-bar li {
+  a {
+    padding-right: 30px;
+  }
+
+  &:last-child {
+    a {
+      padding-right: 0px;   
+    }  
+  }
+}
+nav#taxonomies .taxonomy-root, #sidebar_products_search .filter-title, .product-section-title {
+  color: $c_orange;
+  border-bottom: 2px solid lighten($c_orange, 40);
+  margin-bottom: 16px;
+  font-size: 16px;
+}

@@ -1,0 +1,3 @@
+<!-- replace 'code:contains("t(:my_account)")' -->
+<!-- sequence :after => 'auth_shared_login_bar' -->
+<%= link_to content_tag(:i, '', :class => 'icon-user-5'), spree.account_path, :title => t(:my_account) %>

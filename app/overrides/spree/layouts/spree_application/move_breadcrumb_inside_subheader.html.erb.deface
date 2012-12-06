@@ -1,0 +1,4 @@
+<!-- insert_top '#subheader .subheader-wrapper' -->
+<!-- sequence :after => 'add_subheader_to_layout' -->
+
+<%= breadcrumbs(@taxon) %>

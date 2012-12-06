@@ -1,0 +1,4 @@
+<!-- replace 'h1.product-title' -->
+<% content_for :subheader do %>
+  <h1 class="product-title" itemprop="name"><%= accurate_title %></h1>
+<% end %>

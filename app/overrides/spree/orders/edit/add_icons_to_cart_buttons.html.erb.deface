@@ -1,0 +1,11 @@
+<!-- replace '[data-hook="cart_buttons"]' -->
+<div class="links columns sixteen alpha omega" data-hook="cart_buttons">
+  <%= button_tag :class => 'primary', :id => 'update-button' do %>
+    <i class="icon-arrows-ccw"></i>
+    <%= t(:update) %>
+  <% end %>
+  <%= button_tag :class => 'button checkout primary', :id => 'checkout-link', :name => 'checkout' do %>
+    <i class="icon-right-3"></i>
+    <%= t(:checkout) %>
+  <% end %>
+</div>

@@ -1,0 +1,4 @@
+<!-- replace 'h1.taxon-title' -->
+<% content_for :subheader do %>
+  <h1 class="taxon-title"><%= accurate_title %></h1>
+<% end %>

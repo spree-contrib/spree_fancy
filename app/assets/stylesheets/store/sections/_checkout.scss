@@ -1,0 +1,125 @@
+.progress-steps {
+  margin-left: 20px;
+  overflow: inherit;
+
+  li {
+    @include transition-duration(0.3s);
+    padding: 30px 20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-right: 0;
+    color: white;
+    font-size: 14px;
+
+    &.current, &.current-first, &.current-last {
+      @include single-box-shadow(darken($c_green, 10), 0, 0, 10px, 0);
+      background-color: $c_orange;
+      color: white;
+      border-left: 5px solid lighten($c_orange, 8);
+      border-right: 5px solid lighten($c_orange, 8);
+    }    
+
+    &.current, &.current-first, &.current-last,
+    &.completed-first, &.completed-last, &.completed {
+      
+    }
+
+    &.completed-first, &.completed-last, &.completed {
+      background-color: lighten($c_green, 10);  
+      &, a {
+        color: lighten($c_green, 40);
+      }
+    }
+     
+  }  
+}
+
+#shipping_method {
+  p {
+    label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }  
+}
+
+fieldset {
+  border: none !important;
+  border-top: 2px solid lighten($c_blue, 30) !important;
+
+  legend {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  } 
+}
+
+#checkout-summary {
+  border: none;
+  text-align: left;
+  margin-top: -4px;
+  text-transform: uppercase;
+
+  h3 {
+    font-size: 16px !important;
+    font-weight: 600;
+    color: $c_blue;
+    text-align: center;
+  }  
+
+  tr[data-hook="order_total"] {
+    td {
+      border-top: 2px solid lighten($c_green, 30);
+      color: $c_green;
+    }  
+  }
+}
+
+#summary-order-charges, #order-charges {
+  td {
+    font-size: 12px;
+    font-weight: 600;
+    
+    &:last-child, &:last-child span {
+      color: $c_orange;
+    }
+    &:last-child { 
+      &:before {
+        content: '+ ';
+      } 
+    }
+  }  
+}
+
+#payment-methods fieldset {
+  border: none !important;  
+}
+
+.payment-method-selector.ui-buttonset {
+  text-align: center;  
+}
+
+[data-hook="checkout_form_wrapper"] {
+  .form-buttons {
+    text-align: center;
+  }  
+}
+
+#summary-order-total, [data-hook="order_details"] [data-hook="order_item_total"] span,
+#order_total {
+  color: $c_green !important;  
+  font-weight: 600 !important;
+}
+
+[data-hook="order_item_total"] {
+  text-align: center;  
+}
+
+[data-hook="order_details_total"] {
+  td {
+    border-top: 2px solid lighten($c_blue, 30);
+  }
+}
+
+fieldset#order_details hr {
+  display: none;
+}

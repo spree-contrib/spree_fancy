@@ -1,0 +1,4 @@
+<!-- surround 'h1' -->
+<% content_for :subheader do %>
+  <%= render_original %>
+<% end %>

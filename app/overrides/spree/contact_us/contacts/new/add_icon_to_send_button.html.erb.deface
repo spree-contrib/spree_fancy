@@ -1,0 +1,2 @@
+<!-- replace 'code:contains("contact_us_contact_submit")' -->
+<%= f.button content_tag(:i, '', :class => 'icon-paper-plane') + ' ' + t('.submit'), :type => 'submit', :id => 'contact_us_contact_submit' %>

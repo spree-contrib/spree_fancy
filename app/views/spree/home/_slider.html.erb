@@ -1,0 +1,36 @@
+<% if @slider_products %>
+  <div id="home-slider">
+    <ul>
+      <% @slider_products.each do |product| %>
+        <li>          
+          <div class="product-image">
+            <%= link_to product_image(product), product %>
+          </div>
+          <div class="product-info">
+            <h1 class="product-title"><%= product.name %> - <%= product.sku %></h1>
+            <div class="product-description">
+              <%= product.description %>
+            </div>
+            <div class="product-order-form">
+              <%= form_for :order, :url => populate_orders_path do |f| %>
+                <% if product.on_sale? %>
+                  <span class="product-price">
+                    <%= product.display_price %>
+                  </span>
+                  <%= number_field_tag (product.has_variants? ? :quantity : "variants[#{product.master.id}]"),
+                    1, :class => 'title', :in => 1..product.on_hand, :min => 1 %>
+                  <%= button_tag :id => 'add-to-cart-button', :type => :submit do %>
+                    <%= content_tag(:i, '', :class => 'icon-plus-4') + " " + t(:add_to_cart) %>
+                  <% end %>
+                <% else %>
+                  <%= content_tag('strong', t(:out_of_stock)) %>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </li>
+        
+      <% end %>
+    </ul>
+  </div>
+<% end %>

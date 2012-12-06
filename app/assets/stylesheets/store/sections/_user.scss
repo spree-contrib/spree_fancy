@@ -1,0 +1,19 @@
+#user-info {
+  border: none;
+  padding: 0;
+
+  
+  dt {
+    width: auto;
+    padding-left: 0;
+
+    &:after {
+      content: ':';  
+    }
+  }
+
+  dd {
+    margin-left: inherit;  
+  }
+  
+}
