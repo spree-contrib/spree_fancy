@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_theme_demo'
+  s.name        = 'spree_fancy'
   s.version     = '1.3.0'
-  s.summary     = 'Spree 1.3.x Demo Theme'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Fancy Spree Theme'
+  s.description = 'Fancy theme to apply to out of the box Spree so it looks a bit nicer. Use it as a starting point.'
   s.required_ruby_version = '>= 1.8.7'
 
   s.author    = 'Alexey Topolyanskiy'
