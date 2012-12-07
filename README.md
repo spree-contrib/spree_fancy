@@ -1,5 +1,5 @@
-SpreeThemeDemo
-==============
+SpreeFancy
+==========
 
 Introduction goes here.
 
