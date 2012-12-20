@@ -48,12 +48,11 @@
 }
 
 #main-image {
-  @include border-radius(165px);
   border: 2px solid lighten($c_green, 30) !important;
   overflow: hidden;  
 
-  img {
-    @include border-radius(200px);  
+  &, img {
+    @include border-radius(165px);
   }  
 
   img {
