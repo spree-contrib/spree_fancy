@@ -162,15 +162,12 @@
     }
 
     #main-image {
-      width: 290px;
-      height: 290px;
+      width: 300px;
+      height: 300px;
       margin: 0 auto;
-      padding: 3px;
-      position: static;
-      overflow: hidden;
 
       img {
-        @include border-radius(60px);
+        @include border-radius(40px);
         padding: 30px 0 0 0;
       }
     }
