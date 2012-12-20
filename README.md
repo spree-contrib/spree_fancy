@@ -22,7 +22,7 @@ Then install the gem via Bundler:
 $ bundle install
 ```
 
-Finally, you need to copy over the assets and migrations from the extension into your application
+Finally, you need to copy over the migrations from the extension into your application, and set up asset pipeline require statements for `spree_fancy`:
 
 ```
 $ bundle exec rails g spree_fancy:install
