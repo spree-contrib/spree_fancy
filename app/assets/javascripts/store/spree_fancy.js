@@ -24,7 +24,8 @@ $(function(){
       autoHover: true,
       useCSS: true,
       controls: false,
-      pagerSelector: '.slider-pager'
+      pagerSelector: '.slider-pager',
+      touchEnabled: false
     });
 
     $('.carousel').bxSlider({
@@ -36,6 +37,7 @@ $(function(){
       auto: true,
       autoHover: true,
       controls: false
+      touchEnabled: false
     });
 
     $("#home-slider .product-description").dotdotdot({
