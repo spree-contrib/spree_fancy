@@ -36,7 +36,7 @@ $(function(){
       slideMargin: 10,
       auto: true,
       autoHover: true,
-      controls: false
+      controls: false,
       touchEnabled: false
     });
 
