@@ -43,8 +43,8 @@
   margin-bottom: 0;
 
   .bx-viewport {
-    background-color: transparent;  
-    box-shadow: none;
+    @include box-shadow(none);
+    background-color: transparent;
     border: none;
   }
   .bx-controls {
