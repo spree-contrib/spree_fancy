@@ -1,4 +1,4 @@
 <!-- insert_top '#nav-bar' -->
 <li id="link-to-cart" data-hook>
-  <a href="/cart"><i class="icon-basket-2"></i> <%= link_to_cart %></a>  
+  <a href="/cart"><i class="icon-basket"></i> <%= link_to_cart %></a>  
 </li>
