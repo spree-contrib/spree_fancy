@@ -1,6 +1,6 @@
 <!-- replace '#clear_cart_link' -->
 <p id="clear_cart_link" data-hook>
-  <%= button_tag content_tag(:i, '', :class => 'icon-trash-5') + ' ' + t(:empty_cart), :class => 'button gray', :type => "submit" %>
+  <%= button_tag content_tag(:i, '', :class => 'icon-trash') + ' ' + t(:empty_cart), :class => 'button gray', :type => "submit" %>
   <span class="or"><%= t(:or) %></span>
-  <%= link_to content_tag(:i, '', :class => 'icon-right-3') + ' ' + t(:continue_shopping), products_path, :class => 'continue button gray' %>
+  <%= link_to content_tag(:i, '', :class => 'icon-right') + ' ' + t(:continue_shopping), products_path, :class => 'continue button gray' %>
 </p>

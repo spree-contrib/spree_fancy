@@ -5,7 +5,7 @@
     <%= t(:update) %>
   <% end %>
   <%= button_tag :class => 'button checkout primary', :id => 'checkout-link', :name => 'checkout' do %>
-    <i class="icon-right-3"></i>
+    <i class="icon-right"></i>
     <%= t(:checkout) %>
   <% end %>
 </div>

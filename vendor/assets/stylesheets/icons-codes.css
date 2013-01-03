@@ -6,9 +6,15 @@
 .icon-layout:before { content: '\268f'; } /* '⚏' */
 .icon-check:before { content: '\2713'; } /* '✓' */
 .icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-right:before { content: '\27a1'; } /* '➡' */
+.icon-cw:before { content: '\27f3'; } /* '⟳' */
+.icon-right-bold:before { content: '\e4ae'; } /* '' */
+.icon-trash:before { content: '\e729'; } /* '' */
 .icon-basket:before { content: '\e73d'; } /* '' */
 .icon-login:before { content: '\e740'; } /* '' */
 .icon-logout:before { content: '\e741'; } /* '' */
 .icon-right-circled:before { content: '\e75a'; } /* '' */
+.icon-paper-plane:before { content: '\e79b'; } /* '' */
 .icon-user:before { content: '👤'; } /* '\1f464' */
+.icon-arrows-ccw:before { content: '🔄'; } /* '\1f504' */
 .icon-search:before { content: '🔍'; } /* '\1f50d' */

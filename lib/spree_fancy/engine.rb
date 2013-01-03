@@ -15,11 +15,6 @@ module SpreeFancy
       Dir.glob(File.join(File.dirname(__FILE__), '../../app/**/*_decorator*.rb')) do |c|
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
-
-      initializer "spree_fancy.assets.precompile", :group => :all do |app|
-        app.config.assets.precompile << "store/shared/_print.css"
-      end
-
     end
 
     config.to_prepare &method(:activate).to_proc
