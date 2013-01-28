@@ -2,14 +2,14 @@
   margin-bottom: 24px;
   border-bottom: 2px solid lighten($c_blue, 30);
 
-  #product-price {    
+  #product-price {
     float: left;
     margin-right: 45px;
     line-height: 34px;
     padding-top: 2px;
 
     .price {
-      font-size: 44px;  
+      font-size: 44px;
     }
   }
 
@@ -18,7 +18,7 @@
     margin-top: 0;
 
     #add-to-cart-button {
-      margin-left: 30px;  
+      margin-left: 30px;
     }
   }
 }
@@ -29,7 +29,7 @@
   tr {
 
     &.odd {
-      background-color: lighten($c_blue, 35);  
+      background-color: lighten($c_blue, 35);
     }
     td {
       padding-left: 0;
@@ -40,20 +40,20 @@
         color: $c_blue;
 
         &:after {
-          content: ':';  
+          content: ':';
         }
       }
-    } 
+    }
   }
 }
 
 #main-image {
   border: 2px solid lighten($c_green, 30) !important;
-  overflow: hidden;  
+  overflow: hidden;
 
   &, img {
     @include border-radius(165px);
-  }  
+  }
 
   img {
     padding: 46px 37px 46px 38px;
@@ -69,7 +69,7 @@
 
     a {
       border: 1px solid lighten($body_text_color, 30);
-      text-align: center;      
+      text-align: center;
       display: block;
       width: 70px;
       height: 70px;
@@ -77,15 +77,15 @@
 
       &:hover {
         @include opacity(1);
-        border-color: $c_green;  
+        border-color: $c_green;
       }
 
       &, img {
         @include border-radius(165px);
-      } 
+      }
 
       img {
-        padding: 11px;  
+        padding: 11px;
       }
     }
 

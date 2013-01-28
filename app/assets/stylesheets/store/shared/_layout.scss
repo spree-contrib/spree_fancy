@@ -1,5 +1,5 @@
 body {
-  border-top: 5px solid $c_blue;  
+  border-top: 5px solid $c_blue;
   padding-top: 10px;
   line-height: 24px;
 }
@@ -13,7 +13,7 @@ body {
 .hidden { display: none }
 
 #logo {
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 
 #welcome-message {
@@ -31,7 +31,7 @@ body {
         color: $c_green !important;
       }
     }
-  }  
+  }
 }
 
 #latest-products {
@@ -41,9 +41,9 @@ body {
   .product-image a { border-color: lighten($c_orange, 40) }
   .product-name { color: $c_orange !important; }
 
-  .bx-pager.bx-default-pager a.active, 
+  .bx-pager.bx-default-pager a.active,
   .bx-pager.bx-default-pager a:hover {
-    background-color: $c_orange !important; 
+    background-color: $c_orange !important;
   }
 }
 
@@ -53,9 +53,9 @@ body {
 
   .product-image a { border-color: lighten($c_blue, 30) }
 
-  .bx-pager.bx-default-pager a.active, 
+  .bx-pager.bx-default-pager a.active,
   .bx-pager.bx-default-pager a:hover {
-    background-color: $c_blue !important; 
+    background-color: $c_blue !important;
   }
 }
 
@@ -69,7 +69,7 @@ body {
     .bx-controls {
       bottom: inherit;
       top: -35px;
-    }  
+    }
   }
 
   h3 {
@@ -92,7 +92,7 @@ body {
   }
 
   ul {
-    margin-top: 30px;  
+    margin-top: 30px;
   }
   .product-image {
     a {
@@ -105,17 +105,17 @@ body {
     img {
       @include border-radius(45px);
       width: 160px;
-      height: 160px;  
-    }  
+      height: 160px;
+    }
   }
 }
 
 #sidebar {
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 ul#products li {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   a.info {
     height: inherit;
@@ -124,7 +124,7 @@ ul#products li {
   }
 
   .price {
-    font-size: 24px;  
+    font-size: 24px;
   }
 
   .product-image {
@@ -142,31 +142,31 @@ ul#products li {
         @include border-radius(0);
         width: 150px;
         height: 150px;
-      }    
+      }
     }
   }
 }
 
 #wrapper {
-  margin-top: 30px;  
+  margin-top: 30px;
 }
 
 
 #sidebar_products_search {
   .filter-title {
-    color: $c_blue;  
+    color: $c_blue;
     border-color: lighten($c_blue, 30);
   }
 
   .filter_choices {
-    font-size: 14px;  
+    font-size: 14px;
     list-style: none;
   }
 }
 
 
 .taxons-list {
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
 }
 
 footer#footer {
@@ -180,11 +180,11 @@ footer#footer {
   line-height: 24px;
 
   &, a, h5 {
-    color: white;  
+    color: white;
   }
 
   a:hover {
-    color: lighten($c_green, 30) !important;  
+    color: lighten($c_green, 30) !important;
   }
 
   h5 {
@@ -195,14 +195,14 @@ footer#footer {
   }
 
   p {
-    padding-top: 0;  
+    padding-top: 0;
   }
 
   ul {
     list-style: none;
 
     li {
-      
+
     }
   }
 }

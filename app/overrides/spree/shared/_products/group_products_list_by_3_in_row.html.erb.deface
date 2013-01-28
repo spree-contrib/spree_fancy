@@ -1,0 +1,21 @@
+<!-- replace 'ul#products' -->
+<ul id="products" class="inline product-listing" data-hook>
+  <% products.in_groups_of(3, false).each do |product_row| %>
+    <li class="product-row">
+      <ul>
+        <% product_row.each do |product| %>
+          <% if product.on_display? %>
+            <li id="product_<%= product.id %>" class="columns three <%= cycle("alpha", "secondary", "", "omega secondary", :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+              <div class="product-image">
+                <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+              </div>
+              <%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %>
+              <span class="price selling" itemprop="price"><%= product.price_in(current_currency).display_price %></span>
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+  <% reset_cycle("classes") %>
+</ul>
