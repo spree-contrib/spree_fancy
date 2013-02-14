@@ -1,7 +1,7 @@
 SpreeFancy
 ==========
 
-Fancy theme to be applied to base Spree install. Its intended as a starting point to show how a barebones Spree install can be easily modified to give a nice look in feel. Special bonus is its fully responsive and looks good on mobile devices.
+Fancy theme to be applied to base Spree install. It's intended as a starting point to show how a barebones Spree install can be easily modified to give a nice look in feel. Special bonus is that it's fully responsive and looks good on mobile devices.
 
 If you'd like to see the theme in action, you can register for your own personal [online sandbox](http://spreecommerce.com/demo) which uses the same theme.
 
@@ -10,7 +10,7 @@ Installation
 
 Themes in Spree are typically implemented as [Spree extensions](http://guides.spreecommerce.com/extensions.html). To use the theme you will need an existing Spree application running Spree version 1.3 or higher. If you are unsure of how to do this you can find instructions on how to create a simple Spree application in the [Spree README](https://github.com/spree/spree).
 
-Once you have a rails application running Spree, its a simple three step process to install the spree_fancy extension.  First, add the gem to your `Gemfile`:
+Once you have a rails application running Spree, it's a simple three step process to install the spree_fancy extension.  First, add the gem to your `Gemfile`:
 
 ```
 gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git'
