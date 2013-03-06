@@ -2,14 +2,14 @@
   <div id="home-slider">
     <ul>
       <% @slider_products.each do |product| %>
-        <li>          
+        <li>
           <div class="product-image">
             <%= link_to product_image(product), product %>
           </div>
           <div class="product-info">
             <h1 class="product-title"><%= product.name %> - <%= product.sku %></h1>
             <div class="product-description">
-              <%= product.description %>
+              <%= product.description.html_safe %>
             </div>
             <div class="product-order-form">
               <%= form_for :order, :url => populate_orders_path do |f| %>
@@ -29,7 +29,7 @@
             </div>
           </div>
         </li>
-        
+
       <% end %>
     </ul>
   </div>
