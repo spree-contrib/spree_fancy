@@ -30,7 +30,7 @@
       <h3>Latest Products</h3>
       <hr>
       <ul class="carousel">
-        <% @latest_products.each do |product| %>
+        <% @latest_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
           <%= render 'product', :product => product %>
         <% end %>
       </ul>
