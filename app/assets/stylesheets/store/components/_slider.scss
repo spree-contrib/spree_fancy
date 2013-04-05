@@ -29,6 +29,11 @@
 
 .slider-pager, .bx-wrapper {
   .bx-pager.bx-default-pager {
+    .bx-pager-item {
+      display: inline-block;
+      padding-right: 3px;
+    }
+
     a {
       background-color: #dedede;
 
