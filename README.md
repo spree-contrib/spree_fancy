@@ -13,7 +13,7 @@ Themes in Spree are typically implemented as [Spree extensions](http://guides.sp
 Once you have a rails application running Spree, its a simple three step process to install the spree_fancy extension.  First, add the gem to your `Gemfile`:
 
 ```
-gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git'
+gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '1-3-stable'
 ```
 
 Then install the gem via Bundler:
