@@ -1,0 +1,2 @@
+<!-- replace 'code:contains("link_to small_image")' -->
+<%= link_to product_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
