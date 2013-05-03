@@ -10,10 +10,19 @@ Installation
 
 Themes in Spree are typically implemented as [Spree extensions](http://guides.spreecommerce.com/developer/tutorials/extensions). To use the theme you will need an existing Spree application running Spree version 1.3 or higher. If you are unsure of how to do this you can find instructions on how to create a simple Spree application in the [Spree README](https://github.com/spree/spree).
 
-Once you have a rails application running Spree, it's a simple three step process to install the spree_fancy extension.  First, add the gem to your `Gemfile`:
+Once you have a rails application running Spree, it's a simple three step process to install the spree_fancy extension. 
+
+If you're using Spree 1.3, you will need to add the gem to your Gemfile using
+this line:
 
 ```
-gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git'
+gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => '1-3-stable'
+```
+
+If you are using Spree's master branch, then use this line:
+
+```
+gem 'spree_fancy', :github => 'spree/spree_fancy'
 ```
 
 Then install the gem via Bundler:
