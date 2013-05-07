@@ -60,3 +60,4 @@ $ff_base:       'Open Sans', sans-serif;
       $border_color:                          lighten($body_text_color, 30);
       $default_border:                        1px solid $border_color;
       $button_border_color:                   rgba(0, 138, 189, .75) !default;
+      $table_head_color:                      lighten($body_text_color, 60) !default;
