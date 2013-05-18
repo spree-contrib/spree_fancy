@@ -17,7 +17,7 @@
                   <%= product.display_price %>
                 </span>
                 <%= number_field_tag (product.has_variants? ? :quantity : "variants[#{product.master.id}]"),
-                  1, :class => 'title', :in => 1..Spree::Quantifier.new(product.master).total_on_hand, :min => 1 %>
+                  1, :class => 'title', :in => 1..Spree::Stock::Quantifier.new(product.master).total_on_hand, :min => 1 %>
                 <%= button_tag :id => 'add-to-cart-button', :type => :submit do %>
                   <%= content_tag(:i, '', :class => 'icon-plus') + " " + t(:add_to_cart) %>
                 <% end %>
