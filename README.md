@@ -48,6 +48,6 @@ This is achieved by overriding the index action in the Spree::HomeController usi
 Creating Your Own Extensions
 ============================
 
-To learn more about creating your own extensions, have a look in the [Spree extensions tutorial](http://guides.spreecommerce.com/developer/tutorials/extensions/)
+To learn more about creating your own extensions, have a look in the [Spree extensions tutorial](http://guides.spreecommerce.com/developer/extensions.html)
 
 Copyright (c) 2012-2013 Spree Commerce Inc., released under the New BSD License
