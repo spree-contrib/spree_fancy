@@ -1,1 +1,1 @@
-remove 'code:contains("submit_tag t(:search)")'
+remove 'code:contains("submit_tag Spree.t(:search)")'

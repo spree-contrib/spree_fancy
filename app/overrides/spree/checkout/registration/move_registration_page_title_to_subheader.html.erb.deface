@@ -1,4 +1,4 @@
 <!-- replace 'h1' -->
 <% content_for :subheader do %>
-  <h1><%= t(:registration) %></h1>
+  <h1><%= Spree.t(:registration) %></h1>
 <% end %>

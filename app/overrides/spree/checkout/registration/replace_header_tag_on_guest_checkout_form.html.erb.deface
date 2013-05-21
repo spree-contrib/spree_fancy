@@ -1,2 +1,2 @@
 <!-- replace '#guest_checkout h6' -->
-<h3><%= t(:guest_user_account) %></h3>
+<h3><%= Spree.t(:guest_user_account) %></h3>
