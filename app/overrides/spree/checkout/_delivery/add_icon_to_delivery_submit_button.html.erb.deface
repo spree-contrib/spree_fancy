@@ -1,2 +1,2 @@
-<!-- replace 'code:contains("submit_tag t(:save_and_continue)")' -->
-<%= button_tag content_tag(:i, '', :class => 'icon-right-bold') + ' ' + t(:save_and_continue), :type => 'submit', :class => 'continue button primary' %>
+<!-- replace 'code:contains("submit_tag Spree.t(:save_and_continue)")' -->
+<%= button_tag content_tag(:i, '', :class => 'icon-right-bold') + ' ' + Spree.t(:save_and_continue), :type => 'submit', :class => 'continue button primary' %>

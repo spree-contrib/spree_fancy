@@ -2,7 +2,7 @@
 
 <% get_taxonomies.each do |taxonomy| %>
   <% unless taxonomy.name == 'Tags' %>
-    <h6 class='taxonomy-root'><%= t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></h6>
+    <h6 class='taxonomy-root'><%= Spree.t(:shop_by_taxonomy, :taxonomy => taxonomy.name) %></h6>
     <%= taxons_tree(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
   <% end %>
 <% end %>
