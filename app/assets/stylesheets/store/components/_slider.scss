@@ -1,12 +1,13 @@
 #subheader {
   @include single-box-shadow(darken($c_green, 10), 0, 0, 15px, 0, true);
-  // background: image-url('store/subheader-bg.png') repeat center;
+
   background-color: lighten($c_green, 5);
   color: white;
   border-top: 5px solid lighten($c_green, 40);
   border-bottom: 5px solid lighten($c_green, 40);
   overflow: hidden;
-  
+  padding: 20px 0;
+
   .subheader-wrapper {
     padding: 20px 10px;
     color: white;
@@ -56,7 +57,7 @@
     position: absolute;
     width: 100%;
     bottom: -20px;
-  } 
+  }
 }
 
 #latest-products, #featured-products {
@@ -76,7 +77,7 @@
       a {
         float: none;
         margin: 0 auto;
-      }  
+      }
     }
 
     .product-name {
@@ -149,7 +150,6 @@
         overflow: auto;
         float: left;
         width: 35%;
-        margin-top: 40px;
       }
 
       input[type="number"] {
