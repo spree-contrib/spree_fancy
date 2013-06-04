@@ -41,7 +41,7 @@ This copies over the migrations from the extension into your application, and se
 Usage
 =====
 
-This theme alters the look and feel of the spree frontend, using the [bxSlider](http://http://bxslider.com/) jQuery plugin to present products on the front page. Products can appear in any of the 3 sliders: "Slider", "Featured" and "Latest". The plugin adds 3 taxonomies to control which products appear in the sliders. To try these out, sign in to the backend and try adding/removing the taxonomies to/from products and refresh the store front page to see how this affects the sliders.
+This theme alters the look and feel of the spree frontend, using the [bxSlider](http://bxslider.com/) jQuery plugin to present products on the front page. Products can appear in any of the 3 sliders: "Slider", "Featured" and "Latest". The plugin adds 3 taxonomies to control which products appear in the sliders. To try these out, sign in to the backend and try adding/removing the taxonomies to/from products and refresh the store front page to see how this affects the sliders.
 
 This is achieved by overriding the index action in the Spree::HomeController using a Decorator. Have a look at the [Decorators Guide](http://guides.spreecommerce.com/developer/tutorials/decorators/) for more information about using decorators to customize your application's logic.
 
