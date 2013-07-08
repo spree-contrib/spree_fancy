@@ -15,8 +15,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.0.0'
+  s.add_dependency 'spree_core', '~> 2.0'
   s.add_dependency 'compass-rails'
+  s.add_dependency 'jquery-ui-rails'
 
   s.add_development_dependency 'capybara', '1.0.1'
   s.add_development_dependency 'factory_girl', '~> 2.6.4'
