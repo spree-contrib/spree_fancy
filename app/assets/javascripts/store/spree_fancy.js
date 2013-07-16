@@ -1,6 +1,6 @@
 //= require store/spree_frontend
 //= require jquery.hoverIntent
-//= require jquery-ui
+//= require jquery.ui.all
 //= require jquery.bxslider
 //= require jquery.dotdotdot-1.5.2
 //= require matchMedia
