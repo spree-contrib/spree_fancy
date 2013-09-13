@@ -1,5 +1,17 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   body {
+    #product-images #main-image {
+      width: 270px;
+      height: 270px;
+
+      img {
+        width: 90%;
+        height: 90%;
+        min-height: 90%;
+        max-width: 90%;
+        padding: 10px 0 0 0;
+      }
+    }
 
     .carousel li.four.columns {
       width: 240px !important;
@@ -44,7 +56,11 @@
 
     ul#products {
       .product-image {
+        min-height: 165px;
+
         a {
+          padding: 30px;
+
           img {
             width: 100px;
             height: 100px;
@@ -100,6 +116,7 @@
 
 @media only screen and (max-width: 767px) {
   body {
+
     #header {
       margin-bottom: 10px;
     }
@@ -266,6 +283,8 @@
         font-weight: 600;
       }
       .product-image {
+        min-height: 155px;
+
         a {
           padding: 18px 12px 18px 10px;
 
@@ -385,6 +404,10 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   body {
 
+    #home-slider .product-image a {
+      margin-top: 30px
+    }
+
     #search-bar form {
       right: 120px;
     }
@@ -404,7 +427,7 @@
     }
 
     #subheader .subheader-wrapper h1 {
-      text-align: left;
+      text-align: center;
     }
 
     #mobile-navigation:target {
@@ -481,6 +504,10 @@
 }
 @media only screen and (max-width: 480px) {
   body {
+    #home-slider .product-image a {
+      margin-top: 30px
+    }
+
     #update-cart .coupon-code-field {
       width: 300px !important;
     }

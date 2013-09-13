@@ -113,10 +113,6 @@ body {
   margin-bottom: 30px;
 }
 
-ul#products {
-  max-width: 600px;
-}
-
 ul#products li {
   margin-bottom: 20px;
 
@@ -132,13 +128,12 @@ ul#products li {
 
   .product-image {
     border: none;
-    min-height: 155px;
+    min-height: 245px;
     padding: 0;
 
     a {
       border-color: lighten($c_blue, 30);
       border-width: 2px;
-      padding: 30px 22px 30px 20px;
       float: none;
 
       img {
