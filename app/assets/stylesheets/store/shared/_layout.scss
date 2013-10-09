@@ -113,12 +113,8 @@ body {
   margin-bottom: 30px;
 }
 
-ul#products {
-  max-width: 600px;
-}
-
 ul#products li {
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
 
   a.info {
     height: inherit;
@@ -132,17 +128,29 @@ ul#products li {
 
   .product-image {
     border: none;
-    min-height: 155px;
+    min-height: 220px;
     padding: 0;
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+      min-height: 155px;
+    }
+    @media only screen and (max-width: 767px) {
+      min-height: inherit;
+    }
 
     a {
       border-color: lighten($c_blue, 30);
       border-width: 2px;
-      padding: 30px 22px 30px 20px;
+      padding: 30px 34px;
       float: none;
 
       img {
         @include border-radius(0);
+        
+        @media only screen and (min-width: 768px) and (max-width: 959px) {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }

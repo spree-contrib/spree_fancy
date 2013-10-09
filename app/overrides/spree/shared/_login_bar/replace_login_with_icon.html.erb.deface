@@ -1,0 +1,5 @@
+<!-- replace '#link-to-login' -->
+<!-- sequence :after => 'auth_shared_login_bar' -->
+<li id="link-to-login">
+  <%= link_to content_tag(:i, '', :class => 'icon-login'), spree.login_path, :title => Spree.t(:login) %>
+</li>

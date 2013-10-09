@@ -1,3 +1,7 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 a {
   @include transition-duration(0.3s);  
 }

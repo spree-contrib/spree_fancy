@@ -5,7 +5,7 @@ Spree::HomeController.class_eval do
     @slider_products = slider.products.active if slider
 
     featured = Spree::Taxon.where(:name => 'Featured').first
-    @featured_products = featured.products.active if featured
+    @featured_products = featured.products if featured
 
     latest = Spree::Taxon.where(:name => 'Latest').first
     @latest_products = latest.products.active if latest

@@ -1,2 +1,2 @@
-<!-- insert_before 'code:contains("t(:add_to_cart)")' -->
+<!-- insert_before 'erb:contains("t(:add_to_cart)")' -->
 <i class="icon-plus"></i>

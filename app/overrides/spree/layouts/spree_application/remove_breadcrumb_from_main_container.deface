@@ -1,2 +1,2 @@
-remove '#wrapper > code:contains("breadcrumbs(@taxon)")'
+remove '#wrapper > erb:contains("breadcrumbs(@taxon)")'
 sequence :after => 'move_breadcrumb_inside_subheader'
