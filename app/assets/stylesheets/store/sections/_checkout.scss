@@ -123,3 +123,32 @@ fieldset {
 fieldset#order_details hr {
   display: none;
 }
+
+#update-button {
+  margin-right: 10px;
+}
+
+#checkout_form_address {
+  input[type="text"], input[type="tel"],
+  select, .dropdown {
+    width: 100% !important;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+p[data-hook="use_billing"] {
+  margin-top: 0;
+
+  label {
+    margin-left: 5px;
+  }
+}
+
+ul.radios {
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+}

@@ -5,9 +5,15 @@
 //= require jquery.dotdotdot-1.5.2
 //= require matchMedia
 //= require enquire
+//= require jquery.easydropdown
 
 
 $(function(){
+
+  // Facy selects
+  $('select').easyDropDown({
+    cutOff: 10
+  });
 
   // Hide flash messages after timeout
   setTimeout('$(".flash").fadeOut(1000)', 5000);

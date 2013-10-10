@@ -8,7 +8,7 @@ textarea {
   @include box-shadow(none);
   @include transition-duration(0.3s);
   border-width: 3px;
-  padding: 7px 20px;
+  padding: 10px 20px;
   text-transform: uppercase;
 
 
@@ -17,16 +17,14 @@ textarea {
     color: white;
     border-color: lighten($c_green, 30);  
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 select {
   font-size: 16px;
-}
-
-#billing, #shipping {
-  select {
-    width: 93%;
-  }  
 }
 
 input[type="number"],
@@ -78,5 +76,90 @@ label.ui-button {
     .price.diff {
       color: lighten($c_blue, 30);  
     }  
+  }
+}
+
+.dropdown {
+  @include border-radius(8px);
+
+  border-width: 3px;
+  border-color: $border_color;
+
+  &, .selected {
+    color: $body_text_color;
+    font-size: 13px;
+  }
+
+  .selected {
+    @include border-radius(5px);
+    padding: 10px 20px;
+    font-weight: 600;
+
+    &:after {
+      @include border-radius(0 5px 5px 0);
+    }
+  }
+
+  &:hover {
+    border-color: lighten($c_green, 30);
+
+    .selected {
+      color: white;
+      background-color: $c_green;
+
+      &:after {
+        box-shadow: inset -55px 0 25px -20px $c_green;        
+      }
+    }
+
+    .carat {
+      border-top-color: white;
+    }
+  }
+
+  .carat {
+    background-color: transparent;
+    background-image: none;
+    border-top-color: $body_text_color;
+  }
+
+  &.open {
+    .carat {
+      border-top-color: transparent;
+      border-bottom-color: $body_text_color;
+    }
+
+    &:hover {
+      .carat {
+        border-bottom-color: white;
+      }
+    }
+  }
+
+  div {
+    border-width: 3px;
+    border-color: $border_color;
+    border-top: none;
+
+    ul {
+      li {
+        font-size: 13px;
+        font-style: italic;
+        color: $body_text_color;
+
+        &:hover {
+          background-color: $c_green; 
+        }
+
+        &.active {
+          color: $c_green;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+
   }
 }
