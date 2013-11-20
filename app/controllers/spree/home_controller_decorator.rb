@@ -8,7 +8,7 @@ Spree::HomeController.class_eval do
     @featured_products = featured.products if featured
 
     latest = Spree::Taxon.where(:name => 'Latest').first
-    @latest_products = latest.products.active if latest
+    @latest_products = latest.products.active.distinct if latest
   end
 
 end
