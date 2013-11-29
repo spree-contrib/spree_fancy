@@ -1,2 +1,2 @@
-<!-- insert_before 'code:contains("csrf_meta_tags")'-->
+<!-- insert_before 'erb:contains("csrf_meta_tags")'-->
 <%= stylesheet_link_tag 'store/print', :media => 'print' %>

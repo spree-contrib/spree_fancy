@@ -1,1 +1,1 @@
-remove 'code:contains("select_tag :taxon")'
+remove 'erb:contains("select_tag :taxon")'

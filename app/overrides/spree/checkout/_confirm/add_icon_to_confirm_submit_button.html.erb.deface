@@ -1,2 +1,2 @@
-<!-- replace 'code:contains("submit_tag Spree.t(:place_order)")' -->
+<!-- replace 'erb:contains("submit_tag Spree.t(:place_order)")' -->
 <%= button_tag content_tag(:i, '', :class => 'icon-check') + ' ' + Spree.t(:place_order), :type => 'submit', :class => 'continue button primary' %>
