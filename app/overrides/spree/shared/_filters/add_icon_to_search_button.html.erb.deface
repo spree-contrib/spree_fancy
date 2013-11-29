@@ -1,2 +1,2 @@
-<!-- replace 'code:contains(" Spree.t(:search)")' -->
+<!-- replace 'erb:contains(" Spree.t(:search)")' -->
 <%= button_tag content_tag(:i, '', :class => 'icon-search') + ' ' + Spree.t(:search), :type => "submit" %>
