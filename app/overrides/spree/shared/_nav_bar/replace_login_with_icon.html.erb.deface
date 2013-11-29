@@ -1,0 +1,3 @@
+<!-- replace 'erb:contains("Spree.t(:login)")' -->
+<!-- sequence :after => 'auth_shared_login_bar' -->
+<%= link_to content_tag(:i, '', :class => 'icon-login'), spree.login_path, :title => Spree.t(:login) %>
