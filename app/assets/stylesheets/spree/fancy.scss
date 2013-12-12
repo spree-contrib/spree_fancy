@@ -1,0 +1,33 @@
+/*
+ = require jquery-ui-1.9.2.custom
+ = require jquery.bxslider
+ = require icons
+ = require icons-codes
+*/
+@import 'compass';
+@import 'compass/css3';
+
+@import 'spree/fancy/variables';
+@import 'spree/fancy/variables_override';
+
+@import 'spree/fancy/shared/typography';
+@import 'spree/fancy/shared/forms';
+@import 'spree/fancy/shared/layout';
+@import 'spree/fancy/shared/tables';
+
+@import 'spree/fancy/components/slider';
+@import 'spree/fancy/components/product_item';
+@import 'spree/fancy/components/search';
+@import 'spree/fancy/components/cart';
+@import 'spree/fancy/components/breadcrumbs';
+@import 'spree/fancy/components/variants';
+@import 'spree/fancy/components/messages';
+@import 'spree/fancy/components/navigation';
+@import 'spree/fancy/components/pagination';
+
+@import 'spree/fancy/sections/checkout';
+@import 'spree/fancy/sections/cart';
+@import 'spree/fancy/sections/user';
+@import 'spree/fancy/sections/contact_us';
+
+@import 'spree/fancy/shared/media';

@@ -1,4 +1,4 @@
-//= require store/spree_frontend
+//= require spree/frontend
 //= require jquery.hoverIntent
 //= require jquery.ui.all
 //= require jquery.bxslider
