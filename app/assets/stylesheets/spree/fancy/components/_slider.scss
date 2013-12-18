@@ -1,6 +1,6 @@
 #subheader {
   @include single-box-shadow(darken($c_green, 10), 0, 0, 15px, 0, true);
-  // background: image-url('store/subheader-bg.png') repeat center;
+  // background: image-url('spree/fancy/subheader-bg.png') repeat center;
   background-color: lighten($c_green, 5);
   color: white;
   border-top: 5px solid lighten($c_green, 40);

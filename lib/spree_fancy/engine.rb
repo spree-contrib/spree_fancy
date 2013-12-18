@@ -12,7 +12,7 @@ module SpreeFancy
     end
 
     initializer :assets do |config|
-      Rails.application.config.assets.precompile += %w( store/print.css )
+      Rails.application.config.assets.precompile += %w( spree/fancy/print.css )
     end
 
     def self.activate
