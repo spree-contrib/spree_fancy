@@ -1,6 +1,6 @@
 /*
 * EASYDROPDOWN - A Drop-down Builder for Styleable Inputs and Menus
-* Version: 2.1.0
+* Version: 2.1.4
 * License: Creative Commons Attribution 3.0 Unported - CC BY 3.0
 * http://creativecommons.org/licenses/by/3.0/
 * This software may be used freely on commercial and non-commercial projects with attribution to the author/copyright holder.
@@ -26,7 +26,7 @@
 	
 	EasyDropDown.prototype = {
 		constructor: EasyDropDown,
-		instances: [],
+		instances: {},
 		init: function(domNode, settings){
 			var	self = this;
 			
@@ -91,20 +91,29 @@
 				self.$dropDown.append('<li'+active+'>'+option.title+'</li>');
 			});
 			self.$items = self.$dropDown.find('li');
-			self.maxHeight = 0;
+			
 			if(self.cutOff && self.$items.length > self.cutOff)self.$container.addClass('scrollable');
+			
+			self.getMaxHeight();
+	
+			if(self.isTouch && self.nativeTouch){
+				self.bindTouchHandlers();
+			} else {
+				self.bindHandlers();
+			};
+		},
+		
+		getMaxHeight: function(){
+			var self = this;
+			
+			self.maxHeight = 0;
+			
 			for(i = 0; i < self.$items.length; i++){
 				var $item = self.$items.eq(i);
 				self.maxHeight += $item.outerHeight();
 				if(self.cutOff == i+1){
 					break;
 				};
-			};
-
-			if(self.isTouch && self.nativeTouch){
-				self.bindTouchHandlers();
-			} else {
-				self.bindHandlers();
 			};
 		},
 		
@@ -246,7 +255,7 @@
 			});
 			
 			self.$dropDown.on('scroll.easyDropDown',function(e){
-				if(self.$dropDown[0].scrollTop == self.$dropDown[0].scrollHeight - self.maxHeight){
+				if(self.$dropDown[0].scrollTop >= self.$dropDown[0].scrollHeight - self.maxHeight){
 					self.$container.addClass('bottom');
 				} else {
 					self.$container.removeClass('bottom');
@@ -280,6 +289,7 @@
 				scrollOffset = self.notInViewport(scrollTop);
 
 			self.closeAll();
+			self.getMaxHeight();
 			self.$select.focus();
 			window.scrollTo(scrollLeft, scrollTop+scrollOffset);
 			self.$container.addClass('open');
@@ -316,7 +326,14 @@
 				selectIndex = self.hasLabel ? index + 1 : index;
 			self.$items.removeClass('active').eq(index).addClass('active');
 			self.$active.text(option.title);
-			self.$select.find('option').removeAttr('selected').eq(selectIndex).attr('selected','selected').parent().trigger('change');
+			self.$select
+				.find('option')
+				.removeAttr('selected')
+				.eq(selectIndex)
+				.prop('selected',true)
+				.parent()
+				.trigger('change');
+				
 			self.selected = {
 				index: index,
 				title: option.title
@@ -453,7 +470,7 @@
 			};
 		};
 		
-		$('.dropdown').each(function(){
+		$('select.dropdown').each(function(){
 			var json = $(this).attr('data-settings');
 				settings = json ? $.parseJSON(json) : {}; 
 			instantiate(this, settings);
