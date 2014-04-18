@@ -6,7 +6,8 @@
     checked = !has_checked && (v.can_supply?)
     has_checked = true if checked %>
     
-      <%= radio_button_tag "products[#{@product.id}]", v.id, checked, :disabled => !v.can_supply?, 'data-price' => v.price_in(current_currency).display_price %>
+<input data-price="<%= v.price_in(current_currency).display_price %>" id="<%= ['products', @product.id, v.id].join('_')%>" name="variant_id" type="radio" value="<%= v.id %>" class="ui-helper-hidden-accessible" <% if !v.can_supply? %>disabled <% end %> <% if checked %>checked="checked"<% end %> >
+
       <label for="<%= ['products', @product.id, v.id].join('_') %>">
         <span class="variant-description">
           <%= variant_options v %>
