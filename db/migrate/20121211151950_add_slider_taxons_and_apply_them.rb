@@ -13,8 +13,8 @@ class AddSliderTaxonsAndApplyThem < ActiveRecord::Migration
       end
     end
 
-    if products[16]
-      products[4..16].each do |product|
+    if products[15]
+      products[4..15].each do |product|
         product.taxons << featured
       end
  
