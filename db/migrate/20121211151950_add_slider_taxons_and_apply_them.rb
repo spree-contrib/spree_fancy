@@ -25,6 +25,6 @@ class AddSliderTaxonsAndApplyThem < ActiveRecord::Migration
   end
 
   def down
-    Spree::Taxonomy.where(:name => 'Tags').first.destroy()
+    Spree::Taxonomy.where(:name => 'Tags').destroy_all
   end
 end
