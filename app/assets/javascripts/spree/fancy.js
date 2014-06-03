@@ -47,7 +47,7 @@ $(function(){
 
   }
 
-  // Make buttons from radio inoputs
+  // Make buttons from radio inputs
   $( "#product-variants .variants-buttons" ).buttonset();
   $( ".payment-method-selector").buttonset();
 
@@ -168,10 +168,10 @@ $(function(){
           return stateSelect.removeClass('required');
         }
       };
-      
+
       ($('#bcountry select')).unbind("change");
       ($('#scountry select')).unbind("change");
-      
+
       ($('#bcountry select')).change(function() {
         return updateState('b');
       });
