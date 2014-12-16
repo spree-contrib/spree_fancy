@@ -1,4 +1,4 @@
 <!-- insert_before 'erb:contains("content_for :sidebar do")' -->
 <% content_for :subheader do %>
-  <h1 class="page-title">Shop</h1>
+  <h1 class="page-title"><%= Spree.t(:shop) %></h1>
 <% end %>
