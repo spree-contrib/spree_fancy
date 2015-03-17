@@ -1,3 +1,7 @@
+DEPRECATION NOTICE
+==========
+This theme does not use Twitter Bootstrap, and therefore will not work for Spree version 3.0 and above. 
+
 SpreeFancy
 ==========
 
